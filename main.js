@@ -3,6 +3,13 @@ document.getElementById("btn").addEventListener("click" , seriesCalc);
 document.getElementById("light").addEventListener("click" , lighten);
 document.getElementById("dark").addEventListener("click" , darken);
 document.getElementById("reset").addEventListener("click" , reset);
+document.getElementById("clearBtn").addEventListener("click" , clearInputs);
+
+function clearInputs(){
+    document.getElementById("r-in").value = "";
+    document.getElementById("g-in").value = "";
+    document.getElementById("b-in").value = "";
+}
 
 function lighten(){
     document.getElementById("html").style.backgroundColor = "white";
